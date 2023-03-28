@@ -17,6 +17,15 @@ Consume and utilize context values throughout your components.
   Use the Mantine <Pagination /> component to allow users to navigate a list of items.
   Hide completed items in the list by default (the ability to show will be added in a later lab).
 
+### Documentation
+
+  - Global state is consumed by the components by using the useContext() hook. The useContext() hook is used to access the global state. The useContext() hook takes in a context object (the object returned from React.createContext) and returns the current context value for that context. The current context value is determined by the value prop of the nearest <MyContext.Provider> above the calling component in the tree.
+
+
+  - The useForm() hook is used to create a form. The useForm() hook takes in an object and returns an array. The first item in the array is the state of the form. The second item in the array is an object with methods to update the state of the form. The useForm() hook takes in an object with the following properties:
+    - initialFormState: an object with the initial state of the form.
+    - initialFormError: an object with the initial state of the form errors.
+    - callback: a function to be called when the form is submitted.
 
 ![lab31](./src/assets/lab31.png)
 
