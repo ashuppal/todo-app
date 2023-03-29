@@ -1,6 +1,7 @@
 #### lab 31
+Author: Ashwini Uppal
 
-To-do list
+#### To-do list
 
 #### Technical Requirements / Notes
 
@@ -27,7 +28,11 @@ Consume and utilize context values throughout your components.
     - initialFormError: an object with the initial state of the form errors.
     - callback: a function to be called when the form is submitted.
 
-![lab31](./src/assets/lab31.png)
+![UML](./src/assets/UML.png)
+![Home Page](./src/assets/homePage.png)
 
-#### UML
-![uml](./src/assets/UML.png)
+![Settings Page](./src/assets/settingPage.png)
+
+![Local Storage](./src/assets/localStorage.png)
+
+

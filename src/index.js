@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import SettingsProvider from '../src/Context/Settings'
 import { MantineProvider } from '@mantine/core';
 
+
 import App from './App.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

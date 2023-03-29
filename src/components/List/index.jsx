@@ -23,10 +23,10 @@ const List = ({ list, toggleComplete }) => {
           <p><small>Assigned to: {item.assignee}</small></p>
           <p><small>Difficulty: {item.difficulty}</small></p>
           <div onClick={() => toggleComplete(item.id)}>Complete: {item.complete.toString()}</div>
-
         </Card>
       ))}
 
+      {/* <Pagination value={page} onChange={setPage} total={pageCount}/> */}
       <When condition={listToRender.length > 0}>
         <Pagination page={page} onChange={setPage} total={pageCount}/>
       </When>

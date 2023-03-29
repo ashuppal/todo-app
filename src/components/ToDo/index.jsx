@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import useForm from '../../hooks/form.js';
 import Header from '../Header';
+import Footer from '../Footer/index.jsx';
 
 import { v4 as uuid } from 'uuid';
 import List from '../List/index.jsx';
 import { Button, Card, createStyles, Grid, Slider, Text, TextInput } from '@mantine/core';
+
 
 
 
@@ -20,6 +22,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const ToDo = () => {
+
   const { classes } = useStyles();
 
   const [defaultValues] = useState({
@@ -109,6 +112,11 @@ const ToDo = () => {
           <List list={list} toggleComplete={toggleComplete} />
         </Grid.Col>
       </Grid>
+
+
+
+      
+      <Footer />
     </>
   );
 };
