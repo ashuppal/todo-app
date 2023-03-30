@@ -1,31 +1,27 @@
+import React, { useContext } from 'react';
+import { When } from 'react-if';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from './components/Header';
+import SettingsForm from './components/SettingsForm';
 
-import React from 'react';
+import ToDo from './components/ToDo';
+import { AuthContext } from './Context/Auth';
 
-import ToDo from '../src/components/ToDo';
+const App = () => {
+  const { isLoggedIn } = useContext(AuthContext);
 
-import SettingsForm from './components/SettingsForm/index'
-
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-
-
-
-
-export default class App extends React.Component {
-  render() {
-    return (
-      <>
-      <BrowserRouter>
-       
+  return (
+    <BrowserRouter>
+      <Header />
+    
+      <When condition={isLoggedIn}>
         <Routes>
+          <Route path="/" element={<ToDo />} />
           <Route path="/settings" element={<SettingsForm />} />
-          <Route path="/" element={<ToDo />}  />
-        
         </Routes>
-
-        </BrowserRouter>
-   
-   </>
-     
-    );
-  }
+      </When>
+    </BrowserRouter>
+  );
 }
+
+export default App;

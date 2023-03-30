@@ -1,6 +1,6 @@
-
-import { createStyles, Header, Navbar, Text, Group } from '@mantine/core';
-import {Link, useNavigate} from 'react-router-dom';
+import { createStyles, Group, Header, Navbar, Text } from '@mantine/core';
+import { Link } from 'react-router-dom';
+import Login from '../Login';
 
 const useStyles = createStyles((theme) => ({
   navbar: {
@@ -15,44 +15,27 @@ const useStyles = createStyles((theme) => ({
     marginTop: theme.spacing.md,
 
   },
-  h1: {
-    // color: theme.colors.gray[9],
-    backgroundColor: theme.colors.blue[8],
-    width: '80%',
-    margin: 'auto',
-    fontSize: theme.fontSizes.lg,
-    padding: theme.spacing.md,
-    marginBottom: theme.spacing.md,
-    marginTop: theme.spacing.md,
+  link: {
+    textDecoration: 'none',
+    color: theme.colors.gray[0],
   }
-
 }))
 
-const AppHeader = ({ incomplete,showHomeTab }) => {
+const AppHeader = ({ incomplete }) => {
   const { classes } = useStyles();
-  const navigate = useNavigate();
-
-  const handleSettingsClick = () => {
-    navigate('/settings');
-  }
-
-  const handleHomeClick = () => {
-    navigate('/');
-  }
-
-
-
 
   return (
     <Header data-testid="todo-header">
-      <Group>
-       
-          <Link className={classes.link} to="/">Home</Link>
-      
-        <Link className={classes.link} to="/settings" onClick={handleSettingsClick}>Settings</Link>
-      </Group>
+      <Navbar className={classes.navbar}>
+        <Group position="apart">
+          <Group>
+            <Link className={classes.link} to="/" default>Home</Link>
+            <Link className={classes.link} to="/settings">Settings</Link>
+          </Group>
+          <Login />
+        </Group>
+      </Navbar>
     </Header>
-    
   )
 }
 

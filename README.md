@@ -29,10 +29,14 @@ Consume and utilize context values throughout your components.
     - callback: a function to be called when the form is submitted.
 
 ![UML](./src/assets/UML.png)
-![Home Page](./src/assets/homePage.png)
 
-![Settings Page](./src/assets/settingPage.png)
 
-![Local Storage](./src/assets/localStorage.png)
+![Login page](./src/assets/1.png)
+
+![todo page](./src/assets/2.png)
+
+![list page](./src/assets/3.png)
+
+![setting page](./src/assets/4.png)
 
 

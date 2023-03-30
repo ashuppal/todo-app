@@ -102,7 +102,7 @@ const ToDo = () => {
                 mb="lg"
               />
 
-              <Button type="submit" variant="gradient" gradient={{ from: 'BLUE', to: 'red', deg: 60 }}>Add Item</Button>
+              <Button type="submit">Add Item</Button>
 
 
             </form>
@@ -112,10 +112,6 @@ const ToDo = () => {
           <List list={list} toggleComplete={toggleComplete} />
         </Grid.Col>
       </Grid>
-
-
-
-      
       <Footer />
     </>
   );
