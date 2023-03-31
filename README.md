@@ -3,6 +3,8 @@ Author: Ashwini Uppal
 
 #### To-do list
 
+This is a to-do list application that allows users to create a list of tasks to complete. The Admin can add, edit, update and delete tasks. The user can also filter the list of tasks by difficulty but cannot delete a task or mark it complete.
+
 #### Technical Requirements / Notes
 
 implement the React context API for defining settings across the entire application.
@@ -27,6 +29,12 @@ Consume and utilize context values throughout your components.
     - initialFormState: an object with the initial state of the form.
     - initialFormError: an object with the initial state of the form errors.
     - callback: a function to be called when the form is submitted.
+
+Deploed
+
+[Deployed Database](https://api-js401.herokuapp.com/api/v1/todo)
+
+
 
 ![UML](./src/assets/UML.png)
 

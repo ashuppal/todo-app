@@ -13,7 +13,7 @@ const useStyles = createStyles((theme) => ({
   }
 }))
 
-const List = ({ list, toggleComplete, deleteItem }) => {
+const List = ({ list, toggleComplete, deleteItem, updateItem }) => {
   const { classes } = useStyles();
   const { can } = useContext(AuthContext)
   const { pageItems, showCompleted } = useContext(SettingsContext)

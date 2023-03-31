@@ -1,4 +1,4 @@
-import { createStyles, Group, Header, Navbar, Text } from '@mantine/core';
+import { createStyles, Group, Navbar, Text } from '@mantine/core';
 import { Link } from 'react-router-dom';
 import Login from '../Login';
 
@@ -21,11 +21,11 @@ const useStyles = createStyles((theme) => ({
   }
 }))
 
-const AppHeader = ({ incomplete }) => {
+const Header = ({ incomplete }) => {
   const { classes } = useStyles();
 
   return (
-    <Header data-testid="todo-header">
+    <header data-testid="todo-header">
       <Navbar className={classes.navbar}>
         <Group position="apart">
           <Group>
@@ -35,8 +35,8 @@ const AppHeader = ({ incomplete }) => {
           <Login />
         </Group>
       </Navbar>
-    </Header>
+    </header>
   )
 }
 
-export default AppHeader
+export default Header
