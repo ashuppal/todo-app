@@ -1,8 +1,8 @@
 name: Run Javascript Tests
 
 on:
-pull_request:
-branches: 
+  pull_request:
+    branches:
 - context-methods
 
 jobs:
