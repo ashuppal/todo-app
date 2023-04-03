@@ -1,7 +1,7 @@
 name: Run Javascript Tests
 
 on: [push]:
-braches: 
+branches: 
 - 'context-methods'
 
 jobs:
