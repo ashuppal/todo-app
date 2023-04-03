@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import useForm from '../../hooks/form.js';
 import Header from '../Header';
 import Footer from '../Footer/index.jsx';
@@ -39,10 +39,10 @@ const ToDo = () => {
     setList([...list, item]);
   }
 
-  function deleteItem(id) {
-    const items = list.filter(item => item.id !== id);
-    setList(items);
-  }
+  // function deleteItem(id) {
+  //   const items = list.filter(item => item.id !== id);
+  //   setList(items);
+  // }
 
   function toggleComplete(id) {
 

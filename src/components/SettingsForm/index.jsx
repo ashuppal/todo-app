@@ -1,9 +1,9 @@
 
-import { Button, createStyles, Grid, Card, NumberInput, Switch, Text, TextInput } from '@mantine/core';
+import { Button, createStyles, Grid, Card, NumberInput,Text, TextInput } from '@mantine/core';
 import { useContext, useState } from 'react';
 import { SettingsContext } from '../../Context/Settings';
 import { When } from 'react-if';
-import AppHeader from '../Header/index' ;
+// import AppHeader from '../Header/index' ;
 
 const useStyles = createStyles((theme) => ({
   h1: {
@@ -24,7 +24,7 @@ const SettingsForm = () => {
   const [show, setShow] = useState(false);
   
   const { showComplete,
-    setShowComplete,
+   
     pageItems,
     setPageItems,
     sort,

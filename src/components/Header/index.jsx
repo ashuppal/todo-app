@@ -1,5 +1,5 @@
 
-import { createStyles, Header, Navbar, Text, Group } from '@mantine/core';
+import { createStyles, Header, Group } from '@mantine/core';
 import {Link, useNavigate} from 'react-router-dom';
 
 const useStyles = createStyles((theme) => ({
@@ -36,9 +36,9 @@ const AppHeader = ({ incomplete,showHomeTab }) => {
     navigate('/settings');
   }
 
-  const handleHomeClick = () => {
-    navigate('/');
-  }
+  // const handleHomeClick = () => {
+  //   navigate('/');
+  // }
 
 
 
