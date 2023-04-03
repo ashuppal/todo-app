@@ -1,15 +1,11 @@
 name: Run Javascript Tests
 
-on:
-  pull_request:
-    branches:
-- context-methods
+on: [push]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
-     if: github.event_name == 'pull_request'
 
     strategy:
       matrix:
