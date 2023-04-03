@@ -1,6 +1,7 @@
 name: Run Javascript Tests
 
-on: [push]:
+on:
+pull_request:
 branches: 
 - 'context-methods'
 
