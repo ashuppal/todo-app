@@ -18,9 +18,10 @@ describe('Settings Context', () => {
           }
         </SettingsContext.Consumer>
       </SettingsProvider>
+      
     );
   });
-  
+
 });
 
   
