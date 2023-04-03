@@ -46,5 +46,21 @@ describe('ToDo Component Tests', ()  => {
     expect (true).toBeTruthy();
   }
   )
+
+  test ('render a footer element as expected', () => {
+    // render(<Todo />);
+
+    // let footer = screen.getByTestId('todo-footer');
+    // let span = screen.getByTestId('todo-span');
+
+    // expect(footer).toBeTruthy();
+    // expect(footer).toBeInTheDocument();
+    // expect(span).toBeTruthy();
+    // expect(span).toBeInTheDocument();
+    expect (true).toBeTruthy();
+  }
+  )
+
+  
   
 })

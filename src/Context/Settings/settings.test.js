@@ -20,6 +20,7 @@ describe('Settings Context', () => {
       </SettingsProvider>
     );
   });
+  
 });
 
   
