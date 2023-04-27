@@ -30,9 +30,6 @@ Consume and utilize context values throughout your components.
     - initialFormError: an object with the initial state of the form errors.
     - callback: a function to be called when the form is submitted.
 
-Deploed
-
-[Deployed Database](https://api-js401.herokuapp.com/api/v1/todo)
 
 
 
